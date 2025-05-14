@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>YadPay - Inscription</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>YadPay - Inscription</h1>
+    <form action="notifications.html" method="GET">
+      <label>Nom complet:</label>
+      <input type="text" name="nom" required>
+
+      <label>Numéro CNI:</label>
+      <input type="text" name="cni" required>
+
+      <label>Choix de la banque:</label>
+      <select name="banque" required>
+        <option value="">-- Sélectionnez --</option>
+        <option value="Banque A">Banque A</option>
+        <option value="Banque B">Banque B</option>
+        <option value="Banque C">Banque C</option>
+      </select>
+
+      <label>Numéro de carte:</label>
+      <input type="text" name="carte" required>
+
+      <label>CSV:</label>
+      <input type="password" name="csv" required>
+
+      <button type="submit">S'inscrire</button>
+    </form>
+  </div>
+</body>
+</html>

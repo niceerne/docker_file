@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer les Bénéficiaires - YadPay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>YadPay</h1>
+        <p>Gestion des bénéficiaires</p>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="inscription.html">Inscription</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="beneficiaires.html">Bénéficiaires</a>
+    </nav>
+    <main>
+        <section class="form-container">
+            <h2>Ajouter un Bénéficiaire</h2>
+            <form id="form-beneficiaire">
+                <label for="nom-beneficiaire">Nom :</label>
+                <input type="text" id="nom-beneficiaire" required>
+
+                <label for="prenom-beneficiaire">Prénom :</label>
+                <input type="text" id="prenom-beneficiaire" required>
+
+                <label>Autorisation de paiement :</label>
+                <div class="switch-container">
+                    <label class="switch">
+                        <input type="checkbox" id="autorisation-paiement" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <span id="autorisation-text">Autorisé</span>
+                </div>
+
+                <button type="submit" class="btn">Ajouter</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Liste des Bénéficiaires</h2>
+            <div id="liste-beneficiaires">
+                <!-- Liste générée par JavaScript -->
+                <p>Aucun bénéficiaire ajouté.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 YadPay. Tous droits réservés.</p>
+    </footer>
+    <script src="beneficiaires.js"></script>
+</body>
+</html>

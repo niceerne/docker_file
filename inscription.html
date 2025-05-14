@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - YadPay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>YadPay</h1>
+        <p>Inscription au service de paiement</p>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="inscription.html">Inscription</a>
+        <a href="notifications.html">Notifications</a>
+    </nav>
+    <main>
+        <section class="form-container">
+            <h2>Informations de Paiement</h2>
+            <form action="#" method="POST">
+                <label for="nom">Nom complet :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="cni">Numéro de CNI :</label>
+                <input type="text" id="cni" name="cni" required>
+
+                <label for="banque">Banque :</label>
+                <select id="banque" name="banque" required>
+                    <option value="">-- Choisissez une banque --</option>
+                    <option value="bkam">Bank Al Maghrib</option>
+                    <option value="attijari">Attijariwafa Bank</option>
+                    <option value="bmce">BMCE Bank</option>
+                    <option value="cih">CIH Bank</option>
+                </select>
+
+                <label for="carte">Numéro de carte :</label>
+                <input type="text" id="carte" name="carte" placeholder="1234 5678 9012 3456" required>
+
+                <label for="csv">Code CSV :</label>
+                <input type="text" id="csv" name="csv" placeholder="123" required>
+
+                <button type="submit" class="btn">Valider le Paiement</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 YadPay. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
